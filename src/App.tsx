@@ -278,6 +278,16 @@ function App() {
         </div>
         <p className="app-credits">
           Open Source Tone Generator · Built with React & Web Audio API
+          <br />
+          <a
+            href="https://github.com/Routhleck/tone-generator"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-link"
+          >
+            <span className="github-icon">⭐</span>
+            View on GitHub
+          </a>
         </p>
       </footer>
     </div>
