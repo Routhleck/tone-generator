@@ -1,0 +1,82 @@
+.octave-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.octave-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.octave-button-group {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.octave-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  background: var(--surface);
+  color: var(--text-primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  min-width: 120px;
+}
+
+.octave-button:hover {
+  background: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.octave-button:active {
+  transform: translateY(0);
+}
+
+.octave-symbol {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  line-height: 1;
+}
+
+.octave-description {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.octave-button:hover .octave-description {
+  color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .octave-button-group {
+    width: 100%;
+  }
+
+  .octave-button {
+    flex: 1;
+    min-width: 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+
+  .octave-symbol {
+    font-size: 1.5rem;
+  }
+
+  .octave-description {
+    font-size: 0.75rem;
+  }
+}
